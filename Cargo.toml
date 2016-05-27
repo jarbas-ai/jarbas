@@ -1,6 +1,9 @@
 [package]
-name = "jarbas"
+name = "jarbasd"
 version = "0.1.0"
 authors = ["oesgalha <oscaresgalha@gmail.com>"]
 
 [dependencies]
+
+[dependencies.iron]
+version = "0.3.0"
