@@ -4,6 +4,5 @@ version = "0.1.0"
 authors = ["oesgalha <oscaresgalha@gmail.com>"]
 
 [dependencies]
-
-[dependencies.iron]
-version = "0.3.0"
+toml = "0.1.30"
+iron = "0.3.0"
