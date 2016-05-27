@@ -1,0 +1,6 @@
+[package]
+name = "jarbas"
+version = "0.1.0"
+authors = ["oesgalha <oscaresgalha@gmail.com>"]
+
+[dependencies]
