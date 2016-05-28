@@ -57,6 +57,10 @@ impl TaskInput {
             mandatory: toml.lookup("mandatory").unwrap().as_bool().unwrap()
         }
     }
+
+    pub fn is_valid()(&self) -> bool {
+        // TODO
+    }
 }
 
 pub struct TaskOutput {
