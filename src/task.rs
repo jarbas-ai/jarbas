@@ -1,5 +1,7 @@
 extern crate toml;
 
+use std::path::Path;
+
 pub enum TaskIOType {
     int,
     float,
@@ -59,7 +61,7 @@ impl TaskInput {
     }
 
     pub fn is_valid(&self, value_str: &str) -> bool {
-        match &self.iotype {
+        match self.iotype {
             TaskIOType::file => Path::new(&value_str).is_file(),
             _ => true
         }
