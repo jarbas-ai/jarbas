@@ -58,9 +58,11 @@ impl TaskInput {
         }
     }
 
-    pub fn is_valid(&self) -> bool {
-        // TODO
-        return true;
+    pub fn is_valid(&self, value_str: &str) -> bool {
+        match &self.iotype {
+            TaskIOType::file => Path::new(&value_str).is_file(),
+            _ => true
+        }
     }
 }
 
