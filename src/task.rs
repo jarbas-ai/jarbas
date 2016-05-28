@@ -1,6 +1,6 @@
 extern crate toml;
 
-enum TaskIOType {
+pub enum TaskIOType {
     int,
     float,
     string,
@@ -58,8 +58,9 @@ impl TaskInput {
         }
     }
 
-    pub fn is_valid()(&self) -> bool {
+    pub fn is_valid(&self) -> bool {
         // TODO
+        return true;
     }
 }
 
